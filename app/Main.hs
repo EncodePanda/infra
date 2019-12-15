@@ -1,4 +1,8 @@
 module Main where
 
+import InfraUI
+import Brick.Main
+
+
 main :: IO ()
-main = putStrLn "TBA"
+main = defaultMain ourApp 10 >>= putStrLn . show
